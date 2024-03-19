@@ -9,6 +9,14 @@ return {
 	{ "t", "<cmd>NvimTreeToggle<CR>", desc = "Toggle NvimTree" },
   },
   config = function()
-    require("nvim-tree").setup {}
+    require("nvim-tree").setup {
+	filters = { 
+		dotfiles = false,
+		git_clean = false,
+		git_ignored = false,
+		no_buffer = false,
+		custom = { 'node_modules', '.git' },
+	}
+    }
   end,
 }
