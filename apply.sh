@@ -11,4 +11,5 @@ rm -rf ~/.config/nvim/*
 cp -r lua ~/.config/nvim/lua
 cp init.lua ~/.config/nvim/init.lua
 echo "Done"
+cd $STARTDIR
 exit 0
